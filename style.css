@@ -1,0 +1,181 @@
+/* ..........common styles................ */
+
+.circle-container {
+  margin: 40px;
+  position: relative;
+  width: 550px;
+  height: 550px;
+  overflow: hidden;
+}
+
+.center-object {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  z-index: 2;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-object img {
+  width: 70px;
+}
+
+.orbit {
+  z-index: 20;
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  padding: 10px 0;
+  transform: translate(-50%, -50%) rotate(calc(360deg / 14 * var(--i)))
+    translate(220px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.item > img {
+  height: 45px;
+  transform: rotate(180deg);
+}
+
+/* ..................keyframes..................... */
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes inwards {
+  0% {
+    transform: translate(-50%, -50%) rotate(calc(360deg / 14 * var(--i)))
+      translate(220px);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) rotate(calc(360deg / 14 * var(--i)))
+      translate(170px);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(calc(360deg / 14 * var(--i)))
+      translate(220px);
+  }
+}
+
+@keyframes outwards {
+  0% {
+    transform: translate(-50%, -50%) rotate(calc(360deg / 14 * var(--i)))
+      translate(220px);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) rotate(calc(360deg / 14 * var(--i)))
+      translate(250px);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(calc(360deg / 14 * var(--i)))
+      translate(220px);
+  }
+}
+
+@keyframes zoom-in-out{
+  0%, 100% {
+    transform: scale(1); 
+  }
+  50% {
+    transform: scale(1.3); 
+  }
+}
+
+
+
+/* ........................1️⃣rotation around center......................*/
+
+/* .orbit{
+  animation: spin 10s linear infinite;
+} */
+
+
+
+
+/* ......................2️⃣spinning around the axis........................ */
+
+/* .item > img {
+ animation: spin 2s linear infinite;
+} */
+
+
+
+
+
+/*...........................3️⃣in and out..............................*/
+
+/* .item:nth-child(odd) {
+  animation: outwards 2s linear infinite;
+}
+
+.item:nth-child(even) {
+  animation: inwards 2s linear infinite;
+} */
+
+
+
+
+
+/* ......................4️⃣different position and spinning................ */
+
+/* .item:nth-child(odd) {
+   transform: translate(-50%, -50%) rotate(calc(360deg / 14 * var(--i)))
+      translate(250px);
+}
+
+.item:nth-child(even) {
+  transform: translate(-50%, -50%) rotate(calc(360deg / 14 * var(--i)))
+      translate(170px);
+}
+
+.item>img{
+  animation: spin 2s linear infinite;
+} */
+
+
+
+
+
+/* ......................5️⃣different position and icon zoom............... */
+
+/* .item:nth-child(odd) {
+   transform: translate(-50%, -50%) rotate(calc(360deg / 14 * var(--i)))
+      translate(250px);
+}
+
+.item:nth-child(even) {
+  transform: translate(-50%, -50%) rotate(calc(360deg / 14 * var(--i)))
+      translate(170px);
+}
+
+.item>img{
+  animation: zoom-in-out 2s ease-in-out infinite;
+} */
+
+
+
+
+
