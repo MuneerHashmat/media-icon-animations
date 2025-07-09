@@ -40,14 +40,14 @@
   left: 50%;
   background-color: white;
   padding: 10px 0;
-  transform: translate(-50%, -50%) rotate(calc(360deg / 14 * var(--k)))
+  transform: translate(-50%, -50%) rotate(calc(360deg / 15 * var(--k)))
     translate(220px);
   transition: transform 0.3s ease-in-out;
 }
 
 .animation1-item > img {
   height: 45px;
-  transform: rotate(180deg);
+  transform: rotate(calc(-360deg / 15 * var(--k)));
 }
 
 /* ..................keyframes..................... */
@@ -55,34 +55,34 @@
 
 @keyframes inwards {
   0% {
-    transform: translate(-50%, -50%) rotate(calc(360deg / 14 * var(--k)))
+    transform: translate(-50%, -50%) rotate(calc(360deg / 15 * var(--k)))
       translate(220px);
   }
 
   50% {
-    transform: translate(-50%, -50%) rotate(calc(360deg / 14 * var(--k)))
+    transform: translate(-50%, -50%) rotate(calc(360deg / 15 * var(--k)))
       translate(170px);
   }
 
   100% {
-    transform: translate(-50%, -50%) rotate(calc(360deg / 14 * var(--k)))
+    transform: translate(-50%, -50%) rotate(calc(360deg / 15 * var(--k)))
       translate(220px);
   }
 }
 
 @keyframes outwards {
   0% {
-    transform: translate(-50%, -50%) rotate(calc(360deg / 14 * var(--k)))
+    transform: translate(-50%, -50%) rotate(calc(360deg / 15 * var(--k)))
       translate(220px);
   }
 
   50% {
-    transform: translate(-50%, -50%) rotate(calc(360deg / 14 * var(--k)))
+    transform: translate(-50%, -50%) rotate(calc(360deg / 15 * var(--k)))
       translate(250px);
   }
 
   100% {
-    transform: translate(-50%, -50%) rotate(calc(360deg / 14 * var(--k)))
+    transform: translate(-50%, -50%) rotate(calc(360deg / 15 * var(--k)))
       translate(220px);
   }
 }
