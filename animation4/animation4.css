@@ -1,0 +1,74 @@
+/* ..........common styles................ */
+
+.animation4-circle-container {
+  margin: 40px;
+  position: relative;
+  width: 550px;
+  height: 550px;
+  overflow: hidden;
+}
+
+.animation4-center-object {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  z-index: 2;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animation4-center-object img {
+  width: 70px;
+}
+
+.animation4-orbit {
+  z-index: 20;
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.animation4-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  padding: 10px 0;
+  transform: translate(-50%, -50%) rotate(calc(360deg / 14 * var(--m)))
+    translate(220px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.animation4-item > img {
+  height: 45px;
+  transform: rotate(180deg);
+}
+
+/* ..................keyframes..................... */
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.animation4-orbit {
+ animation: spin 10s linear infinite;
+}
+
+
+
+
+
+
+

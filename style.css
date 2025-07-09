@@ -125,7 +125,7 @@
 
 
 
-/*...........................3️⃣in and out..............................*/
+/*...........................3️⃣in and out (first animation)..............................*/
 
 /* .item:nth-child(odd) {
   animation: outwards 2s linear infinite;
@@ -161,7 +161,7 @@
 
 /* ......................5️⃣different position and icon zoom............... */
 
-/* .item:nth-child(odd) {
+.item:nth-child(odd) {
    transform: translate(-50%, -50%) rotate(calc(360deg / 14 * var(--i)))
       translate(250px);
 }
@@ -173,7 +173,7 @@
 
 .item>img{
   animation: zoom-in-out 2s ease-in-out infinite;
-} */
+}
 
 
 
