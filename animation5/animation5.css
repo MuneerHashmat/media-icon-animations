@@ -53,7 +53,7 @@
 /* ..................keyframes..................... */
 
 
-@keyframes inwards {
+@keyframes inwards-5 {
   0% {
     transform: translate(-50%, -50%) rotate(calc(360deg / 14 * var(--n)))
       translate(220px);
@@ -70,7 +70,7 @@
   }
 }
 
-@keyframes outwards {
+@keyframes outwards-5 {
   0% {
     transform: translate(-50%, -50%) rotate(calc(360deg / 14 * var(--n)))
       translate(220px);
@@ -89,11 +89,11 @@
 
 
 .animation5-item:nth-child(odd) {
-  animation: outwards 2s linear infinite;
+  animation: outwards-5 2s linear infinite;
 }
 
 .animation5-item:nth-child(even) {
-  animation: inwards 2s linear infinite;
+  animation: inwards-5 2s linear infinite;
 }
 
 
